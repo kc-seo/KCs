@@ -13,119 +13,110 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'DFY Digital Systems — Knowledge Click (KC) Powered Website, Chatbot & SEO',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-<Hero
+  <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Start Your Project',
+        text: 'Launch Your DFY Project',
         href: '#contact',
         target: '_self',
         icon: 'tabler:rocket',
       },
-      { text: 'Our Services', href: '#services' },
+      { text: 'See Results We Deliver', href: '#services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Knowva Digital Agency Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Knowledge Click DFY Digital Systems Hero Image' }}
   >
     <Fragment slot="title">
-      Elevate Your Brand with <span class="text-accent dark:text-white">Human + AI</span>
-      <span class="hidden xl:inline"> Powered Digital Marketing</span>
+      Scale Your Business with <span class="text-accent dark:text-white">DFY Website, Chatbot & SEO</span> Solutions
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">KCs</span> delivers done-for-you (DFY) digital marketing, combining real human expertise with powerful AI tools for unmatched results.
+        <span class="font-semibold">Knowledge Click (KC)</span> delivers truly **Done-For-You (DFY)** digital systems, combining expert human strategy with powerful **AI-driven automation** for guaranteed growth.
       </span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Human + AI. DFY Excellence.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">DFY Digital Systems. Powered by KC.</span>
       Perfect for Startups, Small Businesses, Creators, Agencies, and Brands ready to scale with smarter marketing.
     </Fragment>
   </Hero>
 
 
-  <!-- Note Widget ******************* -->
-
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
-
-  <!-- Features Widget *************** -->
+  <Note title="The Knowledge Click (KC) Advantage:" description="Speed, Clarity, and Conversion-Focused ROI" />
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Your Services"
+    title="Our DFY Digital Growth Pillars"
+    subtitle="We manage the entire lifecycle—from strategy to launch—across your most critical growth channels."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'DFY Website Design & Development',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Get a high-converting, mobile-first website (new build or redesign) launched fast. We handle the code, copy, and creative.',
+        icon: 'tabler:components', // Changed from Astro+Tailwind
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'DFY Chatbot Setup (KC-Powered)',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Deploy intelligent, 24/7 AI-driven chatbots for instant lead capture, qualification, and customer support using Knowledge Click.',
+        icon: 'tabler:rocket', // Changed from Page Speed
       },
       {
-        title: 'Best Practices',
+        title: 'Strategic DFY SEO & Ranking',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Achieve organic growth by targeting high-intent keywords, optimizing your content, and building authority, leading to consistent free traffic.',
+        icon: 'tabler:arrows-right-left', // Kept SEO related icon
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'KC-Driven Performance & Speed',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Our use of the Knowledge Click platform ensures optimized load times and technical best practices for speed and SEO out of the box.',
+        icon: 'tabler:list-check', // Changed from Best Practices
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Conversion Rate Optimization (CRO)',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Every website and chatbot is engineered for a single purpose: maximizing your visitors\' actions, turning traffic into customers.',
+        icon: 'tabler:brand-tailwind', // Changed from Tailwind (now represents Design focus)
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Full Digital Audit & Strategy',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'We don\'t just build; we strategize. Starting with a deep-dive analysis of your current digital ecosystem to ensure alignment with your goals.',
         icon: 'tabler:bulb',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="The Technology Behind the Results"
+    title="KC's Blueprint: Funnel Automation Meets Functionality!"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Built on AI Foundation',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Our DFY solutions leverage powerful large language models and KC tools to handle complex customer interactions and data analysis.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Styled for High Conversion',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Every design is optimized with modern aesthetics and tested UX principles to maximize lead generation and sales.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Cross-Channel Compatibility',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Ensure your website and chatbot function seamlessly across mobile, desktop, and all major browsers for a consistent user experience.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'High-Tech Team Working Image',
     }}
   >
     <Fragment slot="content">
@@ -138,34 +129,32 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
   <Content
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Zero Learning Curve',
+        description: `Our DFY model means you don't need to learn complex platforms; we handle setup, integration, and maintenance.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Multiple Deployment Possibilities',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'We can integrate your new website and chatbot into existing domains and tech stacks, ensuring a smooth transition.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Fully Optimized Design',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Your digital assets are built from day one to perform optimally on all devices and screen sizes, delivering a consistent and enjoyable user experience.",
       },
       {
-        title: 'Integration of media',
+        title: 'Seamless Media Integration',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'We professionally incorporate high-quality images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'Blueprint or wireframe image',
     }}
   >
     <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
@@ -175,35 +164,33 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
   <Content
     isReversed
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Enhanced Lead Qualification',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Our KC chatbots captivate your audience, pre-qualify leads, and automate segmentation, sending only high-value prospects to your team.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Continuous SEO Improvement',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'We ensure your website stays aligned with the latest search engine trends and algorithms through ongoing optimization services.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Time and Resource Efficiency',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Skip the time-consuming process of building and testing. Launch your fully operational, high-performance digital presence sooner with our DFY model.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Expert Support & Maintenance',
+        description: `We provide post-launch support and optional maintenance plans, ensuring your systems are always running smoothly and effectively.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      alt: 'Digital Growth Chart Image',
     }}
   >
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
@@ -213,95 +200,93 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="The Simple 4-Step DFY Launch Process for Your Business."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Discovery & Strategy</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "We start with a deep-dive call to understand your business goals, target audience, and current digital roadblocks.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">DFY Build & KC Integration</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Our experts design the website, develop the chatbot flow, and implement the foundational SEO—all leveraging the speed of the **Knowledge Click** engine.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Review & Final Polish</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'We present the complete DFY solution for your final approval. We make sure every element is pixel-perfect and conversion-ready.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Step 4: <span class="font-medium">Launch & Optimize</span>',
+        description: 
+            'We launch your new digital asset and hand you the keys, complete with a performance dashboard to track your new leads and results.',
         icon: 'tabler:check',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'Four step process image',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Integrated Tools and Outputs"
+    subtitle="Our DFY service delivers tangible assets and measurable results using the latest technology."
+    tagline="Deliverables"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'High-Converting Website',
+        description: "A secure, fast, and professionally designed platform built to capture leads and showcase your brand.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: 'AI Chatbot Flow Map',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+          "The complete logic and conversational pathways used by your 24/7 Knowledge Click virtual assistant.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
+        title: 'On-Page SEO Audit Report',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+          'A detailed breakdown of all optimized titles, meta descriptions, and header tags for immediate ranking benefits.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'Performance Analytics Dashboard',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+          "A simple, real-time view of your website traffic, lead volume, and chatbot engagement metrics.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Lead Magnet Integration',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+          'Set up of your lead capture forms and email service provider (ESP) integration for automated nurture campaigns.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Clear Pricing Tiers',
+        description: 'Transparent and predictable investment options for a high-ROI DFY solution.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Client Case Studies',
+        description: 'Proven results from businesses similar to yours that have used the KC DFY model to scale.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
+        title: 'Dedicated Contact Portal',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+          'Direct access to your project manager for streamlined communication and support.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'Compliance & Security Footers',
+        description: "Ensuring all legal pages (T&C, Privacy) and site security protocols are correctly implemented.",
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -311,88 +296,79 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
   <BlogLatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    information={`The blog is used to display articles on SEO, AI, and digital growth.
+        Each new article will provide actionable insights into scaling your business with smarter, automated marketing strategies.
+        Knowledge Click is the future of DFY automation.
+        `}
   />
-
-  <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Dive into the following questions to gain insights into the powerful features that Knowledge Click offers and how it can elevate your business."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Q: How does Knowledge Click (KC) make your services "DFY"?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "KC is our proprietary platform that speeds up development, integrates AI tools (like the chatbot), and standardizes SEO best practices. It means **faster launch times** and **higher quality results** without you lifting a finger.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'Q: What is the typical timeline for a DFY Website + Chatbot setup?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'For a standard build, we aim for a **4-6 week turnaround** from strategy kickoff to launch. The DFY process eliminates client back-and-forth and speeds up implementation significantly.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Q: Do I own the website and content after the project is complete?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Absolutely. Once the project is paid for, all assets—website files, domain, content, and chatbot flows—are **100% yours**. We simply build and launch it for you.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Q: Can you work with my existing branding and domain?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Yes. We seamlessly integrate your existing brand identity (logos, colors, fonts) and can deploy the new site directly to your current domain, minimizing downtime.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Q: What happens if I need ongoing maintenance or SEO?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "We offer flexible monthly retainers for ongoing SEO optimization, chatbot maintenance, content updates, and technical support. We are here for long-term growth.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Q: What is the first step to starting a DFY project?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "The first step is booking your **Free Strategy Session** using the CTA below. We will discuss your goals and propose a clear, fixed-price DFY package.",
       },
     ]}
   />
-
-  <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Clients Served', amount: '132+' },
+      { title: 'AI Chatbots Deployed', amount: '24.8K+' },
+      { title: 'Traffic Rank Improvement', amount: '10.3X' },
+      { title: 'Avg. ROI', amount: '48.4%' },
     ]}
   />
-
-  <!-- CallToAction Widget *********** -->
 
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
+        text: 'Book Your Free Strategy Session',
+        href: '#contact',
+        target: '_self',
         icon: 'tabler:download',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready to Automate Your Growth?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Stop wasting time building—start scaling. Book a free consultation to see how Knowledge Click can transform your digital strategy.
     </Fragment>
   </CallToAction>
 </Layout>
