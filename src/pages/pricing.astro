@@ -8,236 +8,309 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Pricing | DFY Services',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Fixed Price Solutions for Guaranteed Digital Growth."
+    subtitle="Choose the model that fits your goals: high-value, one-time DFY setups, or predictable monthly optimization and maintenance."
   />
 
-  <!-- Pricing Widget ******************* -->
-
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="One-Time DFY Service Bundles (Best of Best)"
+    subtitle="Our most popular packages. Get a complete, high-end system built from scratch, professionally and responsively."
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        title: 'Launchpad Website Pro',
+        subtitle: 'Ultimate responsive site build for maximum initial impact.',
+        price: '2,997', // Placeholder price for one-time high-end service
+        period: 'One-Time Fee',
+        items: [
+          {
+            description: 'DFY High-Conversion Website Build (Up to 10 Pages)',
+          },
+          {
+            description: 'Mobile-First Optimization & Core Web Vitals Tuning',
+          },
+          {
+            description: 'Full Technical SEO Setup & 10 Keyword Targets',
+          },
+          {
+            description: 'Custom Branded Design & Premium Stock Assets',
+          },
+          {
+            description: 'Read More: Complete On-Page SEO, Schema Markup, & GSC Integration',
+            isMore: true,
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Get Started (One-Time)',
+          href: '#cta',
+        },
+      },
+      {
+        title: 'AI Lead Automation Suite',
+        subtitle: 'Deploy a 24/7 AI Sales Agent for hands-free lead qualification.',
+        price: '4,997', // Placeholder price for one-time high-end service
+        period: 'One-Time Fee',
+        items: [
+          {
+            description: 'DFY Core Lead Qualification Chatbot Setup',
+          },
+          {
+            description: 'Custom Chatbot Knowledge Base Integration (Up to 50 documents)',
+          },
+          {
+            description: 'CRM Integration (HubSpot, Salesforce, etc.)',
+          },
+          {
+            description: 'Automated Booking & Scheduling Setup (Calendly, etc.)',
+          },
+          {
+            description: 'Read More: Email Sequence Automation Flow & 90 Days of AI Monitoring',
+            isMore: true,
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Get Started (One-Time)',
+          href: '#cta',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Best Value',
+      },
+      {
+        title: 'Full Growth Accelerator',
+        subtitle: 'The ultimate package: website, AI, and comprehensive SEO foundation.',
+        price: '7,997', // Placeholder price for one-time high-end service
+        period: 'One-Time Fee',
+        items: [
+          {
+            description: 'Launchpad Website Pro Bundle **INCLUDED**',
+          },
+          {
+            description: 'AI Lead Automation Suite **INCLUDED**',
+          },
+          {
+            description: '3 Months of DFY Blog Content Writing (1 Article/mo)',
+          },
+          {
+            description: 'DFY Local SEO Setup (Google Business Profile)',
+          },
+          {
+            description: 'Read More: Full Funnel Mapping, Link Building Strategy, & 1-Year Hosting Credit',
+            isMore: true,
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Get Started (One-Time)',
+          href: '#cta',
+        },
+      },
+    ]}
+  />
+  
+  <Prices
+    title="Monthly Optimization & Maintenance Retainers"
+    subtitle="Keep your systems running fast, secure, and continuously optimized for search and conversion."
+    prices={[
+      {
+        title: 'Basic Maintain',
+        subtitle: 'Essential care for security and speed.',
+        price: 99,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Website Maintenance & Security Retainers',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Monthly Software & Plugin Updates',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Weekly Backups & Monitoring',
           },
           {
-            description: 'In hac habitasse',
+            description: '99.9% Uptime Monitoring',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Subscribe Now',
+          href: '#cta',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
+        title: 'Standard Grow',
+        subtitle: 'Ongoing optimization for better traffic and lead quality.',
+        price: 399,
         period: 'Per Month',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Basic Maintain Package **INCLUDED**',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Monthly SEO Performance Reporting',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Technical SEO Health Checks & Fixes',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'Chatbot Performance Monitoring & Tuning',
           },
           {
-            description: 'Donec fringilla sem',
+            description: '1 Hour of Content/Design Edits (per month)',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Subscribe Now',
+          href: '#cta',
         },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
+        title: 'Premium Scale',
+        subtitle: 'Full-service digital strategy management and proactive growth.',
+        price: 999,
         period: 'Per Month',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Standard Grow Package **INCLUDED**',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Monthly Blog Content Writing (1 DFY Article)',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Dedicated Link Building Outreach Campaign (2 links/mo)',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Full Conversion Rate Optimization (A/B Ready)',
+          },
+          {
+            description: 'Up to 5 Hours of Content/Design Edits',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Subscribe Now',
+          href: '#cta',
         },
       },
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
-
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Why Choose Our Digital Service Pricing?"
+    subtitle="We offer flexibility, transparency, and top-tier professionalism in every solution."
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'One-Time DFY Professionalism',
+        description: 'Fixed-price bundles with all features executed by experts for a professional, high-end, and responsive outcome.',
+        icon: 'tabler:check-badge',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
+        title: 'Best of Best Features',
+        description: 'Our bundles include the highest-value services (like CRM integration, Advanced SEO, and AI Knowledge Base) as standard.',
+        icon: 'tabler:diamond',
+      },
+      {
+        title: 'Flexible Model',
+        description: 'Choose between a single, high-impact setup fee or predictable monthly optimization retainers.',
         icon: 'tabler:flip-vertical',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
+        title: 'Transparent Pricing',
+        description: 'Clearly displayed pricing for all plans, with no hidden costs or unexpected charges.',
         icon: 'tabler:shield-lock',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: 'Built-in Responsiveness',
+        description: `All websites and chatbots are built from the ground up for flawless performance on all devices (mobile, tablet, desktop).`,
+        icon: 'tabler:device-mobile-message',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
-      },
-      {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Dedicated Support',
+        description: 'Get priority support for all technical and strategic questions via our expert team.',
         icon: 'tabler:headset',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
   />
 
-  <!-- Steps Widget ****************** -->
-
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="Your 3-Step Journey to Digital Excellence"
+    tagline="Simplified Process"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
+        title: '1. Select Your Bundle or Retainer',
+        icon: 'tabler:file-invoice',
+        description: 'Choose the one-time DFY setup for a new asset, or a monthly retainer for ongoing growth.',
       },
       {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
+        title: '2. Onboarding & Discovery',
+        icon: 'tabler:user-check',
+        description: 'We host a kick-off session to align goals, gather assets, and map out the exact scope.',
       },
       {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
+        title: '3. DFY Execution & Launch',
+        icon: 'tabler:rocket',
+        description: 'Our team executes the entire scope. You review, approve, and launch a system engineered for growth!',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'Steps image showing a streamlined process',
     }}
   />
 
-  <!-- FAQs Widget ******************* -->
-
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="DFY Pricing FAQs"
+    subtitle="Choosing the right plan is important. Here are the answers to our most common pricing questions."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'What does "DFY" mean in the One-Time Bundles?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'DFY stands for "Done-For-You." It means our expert team handles the entire setup process from start to finish, including design, development, integration, and initial configuration. You only provide the vision and key content.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: 'Are there any recurring costs with the One-Time Bundles?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          'The price listed is a one-time fee for the setup and delivery of the service. You will be responsible for standard third-party software costs (like hosting, CRM, or chatbot license fees, if applicable) after the setup is complete. We ensure you own all accounts.',
       },
       {
-        title: 'Can I switch between plans?',
+        title: 'How is the Monthly Retainer different from the One-Time Bundle?',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'The **One-Time Bundle** is for building a new system (e.g., a website or an AI agent). The **Monthly Retainer** is for ongoing maintenance, optimization, and growth activities (like SEO content, technical fixes, and performance tuning) on the systems we have built or you already own.',
       },
       {
-        title: 'What payment methods do you accept?',
+        title: 'Can I combine a One-Time Bundle with a Monthly Retainer?',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          'Yes, this is highly recommended! Starting with a One-Time Bundle ensures a perfect setup, and following up with a Monthly Retainer ensures the asset is maintained, secured, and optimized for continuous growth.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: 'What happens if I need more features than a plan offers?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'We can always customize a plan for you! Simply book a strategy session, and we will create a bespoke bundle that includes the specific high-end features and services you require.',
       },
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    id="cta"
+    title="Ready to Launch Your High-Performance Digital System?"
+    subtitle="Book a free 15-minute consultation to determine which One-Time DFY Bundle or Monthly Retainer is the perfect fit for your business goals."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Book Strategy Session Now',
+        href: '/contact', // Updated to a contact/booking link
       },
     ]}
   />
