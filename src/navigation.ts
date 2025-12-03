@@ -1,182 +1,110 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
+  // --- HEADER NAVIGATION LINKS ---
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Home',
+      href: getPermalink('/'), // Direct link to Home
     },
     {
-      text: 'Pages',
+      text: 'Services',
+      href: getPermalink('/services'),
+    },
+    {
+      text: 'Pricing',
+      href: getPermalink('/pricing'),
+    },
+    {
+      text: 'About Us',
+      href: getPermalink('/about'),
+    },
+    {
+      text: 'Blog', // Keep Blog for Content Marketing
+      href: getBlogPermalink(),
+    },
+    {
+      text: 'Resources', // Dropdown for legal and supplementary pages
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Privacy Policy',
+          href: getPermalink('/privacy'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
+          text: 'Terms & Conditions',
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Case Studies',
+          href: getPermalink('/case-studies'), // Placeholder for future page
         },
       ],
-    },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },
-    {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  // --- HEADER CALL-TO-ACTION BUTTON ---
+  actions: [
+    {
+      text: 'Book Strategy Call',
+      href: getPermalink('/contact'), // Direct link to the Contact/Booking page
+      target: '_self',
+      variant: 'primary',
+    },
+  ],
 };
 
+// --- FOOTER DATA ---
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'DFY Services',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Website Design', href: getPermalink('/services#website') },
+        { text: 'AI Chatbot Automation', href: getPermalink('/services#chatbot') },
+        { text: 'SEO & Content Marketing', href: getPermalink('/services#seo') },
+        { text: 'Pricing & Bundles', href: getPermalink('/pricing') },
+        { text: 'View Case Studies', href: getPermalink('/case-studies') },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About Knowledge Click', href: getPermalink('/about') },
+        { text: 'Careers', href: getPermalink('/careers') }, // Placeholder
+        { text: 'Our Blog', href: getBlogPermalink() },
+        { text: 'Contact & Support', href: getPermalink('/contact') },
+      ],
+    },
+    {
+      title: 'Support',
+      links: [
+        { text: 'Client Login', href: '#' },
+        { text: 'Help Center (FAQs)', href: '#' },
+        { text: 'Start a Support Ticket', href: 'mailto:support@knowledgeclick.com' },
+        { text: 'Knowledge Base', href: '#' },
+        { text: 'Service Status', href: '#' },
+      ],
+    },
+    {
+      title: 'Legal',
+      links: [
+        { text: 'Privacy Policy', href: getPermalink('/privacy') },
+        { text: 'Terms & Conditions', href: getPermalink('/terms') },
+        { text: 'Cookie Policy', href: getPermalink('/cookie-policy') }, // Placeholder
+        { text: 'Disclaimer', href: getPermalink('/disclaimer') }, // Placeholder
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms & Conditions', href: getPermalink('/terms') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' }, // LinkedIn is better for B2B agency
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/knowledge-click' }, // Update with KC's repository
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    © 2025 Knowledge Click DFY Agency. All rights reserved.
   `,
 };
