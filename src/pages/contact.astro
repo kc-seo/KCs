@@ -5,73 +5,75 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact | Start Your DFY Project',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText
+    tagline="Start Your Project"
+    title="Ready to Launch Your Automated System?"
+    subtitle="Let’s discuss your vision. Our strategists will guide you through the next steps for your DFY Website, Chatbot, or SEO foundation."
+  />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Book a Free Strategy Session"
+    subtitle="The fastest way to start your DFY project is to schedule a short call. If your query is general, use the form below."
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Your Name',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Your Business Email',
+      },
+      {
+        type: 'text',
+        name: 'business',
+        label: 'Business Name (Optional)',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Tell us about your project goals (Website, Chatbot, SEO, etc.)',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'By submitting this form, you agree to our Privacy Policy and consent to us contacting you about your DFY project.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our team reviews project requests promptly. Expect a personalized response within 4 hours during business hours."
   />
 
-  <!-- Features2 Widget ************** -->
-
   <Features2
-    title="We are here to help!"
+    title="Quick Contacts & Strategy Booking"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Strategy & Sales Booking',
+        description: `**Book a 1-on-1 Call** with a senior strategist to map out your DFY project.<br/>We'll analyze your needs and recommend the best plan.`,
+        icon: 'tabler:calendar-event', // Icon for booking/strategy
+        callToAction: {
+          text: 'Book Now',
+          href: '#', // Placeholder for actual booking link (e.g., Calendly)
+        },
       },
       {
-        title: 'Contact sales',
+        title: 'Project Inquiries (Email)',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'For detailed project scope documents or partnership proposals:<br/>**sales@knowledgeclick.com**',
+        icon: 'tabler:mail-opened',
       },
       {
-        title: 'Technical support',
+        title: 'Urgent Technical Support',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+          'For existing clients facing critical issues with a live DFY system (24/7 Monitoring):<br/>**support@knowledgeclick.com**',
         icon: 'tabler:headset',
       },
       {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Global Headquarters',
+        description: '1234 Innovation Blvd, New York, NY 10001, USA',
         icon: 'tabler:map-pin',
       },
     ]}
