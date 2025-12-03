@@ -1,7 +1,7 @@
 site:
   # --- KC BRANDING ---
-  name: Knowledge Click DFY Agency
-  site: 'https://knowledgeclick.com' # Use your actual domain here
+  name: KCs
+  site: 'https://knowledge.click' # Use your actual domain here
   base: '/'
   trailingSlash: false
 
@@ -18,7 +18,7 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: Knowledge Click DFY Agency
+    site_name: KCs
     images:
       # Replace this with a path to your actual Knowledge Click logo or brand image
       - url: '~/assets/images/knowledge-click-default.png' 
